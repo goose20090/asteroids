@@ -49,7 +49,7 @@ def main():
                 sys.exit()
             for shot in shots:
                 if ast.has_collided(shot):
-                    ast.kill()
+                    ast.split()
                     shot.kill()
 
         pygame.display.flip()
